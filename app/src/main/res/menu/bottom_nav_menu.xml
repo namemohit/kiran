@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_camera"
+        android:icon="@drawable/ic_camera"
+        android:title="Camera" />
+    <item
+        android:id="@+id/nav_detections"
+        android:icon="@drawable/ic_scan"
+        android:title="Scans" />
+    <item
+        android:id="@+id/nav_biz"
+        android:icon="@drawable/ic_analytics"
+        android:title="Biz" />
+    <item
+        android:id="@+id/nav_catalog"
+        android:icon="@drawable/ic_home"
+        android:title="Shop" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_menu"
+        android:title="Menu" />
+</menu>

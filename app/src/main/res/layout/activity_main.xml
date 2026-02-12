@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary"
+    tools:context=".MainActivity">
+
+    <!-- Camera container (visible when on camera tab) -->
+    <FrameLayout
+        android:id="@+id/cameraContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Full-screen camera preview -->
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Detection overlay -->
+        <com.example.cameraapp.OverlayView
+            android:id="@+id/overlayView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+            
+        <!-- Camera Settings Icon (Top Right) -->
+        <ImageButton
+            android:id="@+id/cameraSettingsButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="@dimen/spacing_md"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:background="@drawable/circle_button_bg"
+            android:padding="@dimen/spacing_sm"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_preferences"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/modelInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:layout_marginStart="@dimen/spacing_md"
+            android:background="#80000000"
+            android:padding="8dp"
+            android:text="Loading models..."
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:fontFamily="monospace" />
+            
+        <!-- Training Overlay -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/trainingOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/spacing_xxl"
+            android:background="#A6000000"
+            android:padding="@dimen/spacing_md"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/trainingStatusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Training: [Product Name]"
+                android:textColor="@color/kiran_accent"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/trainingInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Point camera at product and capture samples"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_caption"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/trainingStatusText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveSampleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capture Sample"
+                android:textSize="@dimen/text_caption"
+                app:backgroundTint="@color/kiran_accent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/stopTrainingButton"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/stopTrainingButton"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textColor="@color/error"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Floating circular capture button with animation -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/captureButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/spacing_xl"
+            android:contentDescription="Capture photo"
+            android:src="@drawable/ic_camera"
+            app:backgroundTint="@color/white"
+            app:fabCustomSize="72dp"
+            app:tint="@color/black"
+            app:elevation="@dimen/elevation_lg" />
+
+    </FrameLayout>
+
+    <!-- Fragment container for other tabs -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:background="@color/background_primary"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Floating Bottom Navigation Container -->
+    <FrameLayout
+        android:id="@+id/bottomNavigationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/spacing_md"
+        android:paddingBottom="@dimen/spacing_md"
+        android:paddingTop="@dimen/spacing_xs"
+        android:background="@color/background_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Floating Bottom Navigation -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_floating_nav"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:minHeight="56dp"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/bottom_nav_color"
+            app:itemTextColor="@color/bottom_nav_color"
+            app:itemActiveIndicatorStyle="@null"
+            app:labelVisibilityMode="labeled"
+            app:itemPaddingTop="8dp"
+            app:itemPaddingBottom="8dp"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

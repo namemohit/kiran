@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="500"
+    android:viewportHeight="500">
+    
+    <!-- Pyramid wireframe lines - Black strokes -->
+    <!-- Base triangle -->
+    <path
+        android:pathData="M100,350 L400,350 L250,420 Z"
+        android:strokeColor="#2D2D2D"
+        android:strokeWidth="8"
+        android:fillColor="@android:color/transparent"/>
+    
+    <!-- Front left edge to apex -->
+    <path
+        android:pathData="M100,350 L250,130"
+        android:strokeColor="#2D2D2D"
+        android:strokeWidth="8"
+        android:fillColor="@android:color/transparent"/>
+    
+    <!-- Front right edge to apex -->
+    <path
+        android:pathData="M400,350 L250,130"
+        android:strokeColor="#2D2D2D"
+        android:strokeWidth="8"
+        android:fillColor="@android:color/transparent"/>
+    
+    <!-- Back edge to apex -->
+    <path
+        android:pathData="M250,420 L250,130"
+        android:strokeColor="#2D2D2D"
+        android:strokeWidth="8"
+        android:fillColor="@android:color/transparent"/>
+    
+    <!-- Vertex dots - Purple/Violet color from logo -->
+    <!-- Top apex -->
+    <path
+        android:pathData="M250,130 m-18,0 a18,18 0 1,0 36,0 a18,18 0 1,0 -36,0"
+        android:fillColor="#6C5CE7"/>
+    
+    <!-- Bottom left vertex -->
+    <path
+        android:pathData="M100,350 m-18,0 a18,18 0 1,0 36,0 a18,18 0 1,0 -36,0"
+        android:fillColor="#6C5CE7"/>
+    
+    <!-- Bottom right vertex -->
+    <path
+        android:pathData="M400,350 m-18,0 a18,18 0 1,0 36,0 a18,18 0 1,0 -36,0"
+        android:fillColor="#6C5CE7"/>
+    
+    <!-- Back bottom vertex -->
+    <path
+        android:pathData="M250,420 m-18,0 a18,18 0 1,0 36,0 a18,18 0 1,0 -36,0"
+        android:fillColor="#6C5CE7"/>
+    
+</vector>

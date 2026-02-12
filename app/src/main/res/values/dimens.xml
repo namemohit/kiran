@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing - 4dp grid system (Blinkit-style) -->
+    <dimen name="spacing_xxxs">2dp</dimen>
+    <dimen name="spacing_xxs">4dp</dimen>
+    <dimen name="spacing_xs">8dp</dimen>
+    <dimen name="spacing_sm">12dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">20dp</dimen>
+    <dimen name="spacing_xl">24dp</dimen>
+    <dimen name="spacing_xxl">32dp</dimen>
+    <dimen name="spacing_xxxl">48dp</dimen>
+    
+    <!-- Corner Radii -->
+    <dimen name="radius_xs">4dp</dimen>
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_lg">16dp</dimen>
+    <dimen name="radius_xl">20dp</dimen>
+    <dimen name="radius_xxl">24dp</dimen>
+    <dimen name="radius_pill">100dp</dimen>
+    
+    <!-- Elevation -->
+    <dimen name="elevation_none">0dp</dimen>
+    <dimen name="elevation_xs">1dp</dimen>
+    <dimen name="elevation_sm">2dp</dimen>
+    <dimen name="elevation_md">4dp</dimen>
+    <dimen name="elevation_lg">8dp</dimen>
+    <dimen name="elevation_xl">12dp</dimen>
+    <dimen name="elevation_xxl">16dp</dimen>
+    
+    <!-- Icon Sizes -->
+    <dimen name="icon_xs">16dp</dimen>
+    <dimen name="icon_sm">20dp</dimen>
+    <dimen name="icon_md">24dp</dimen>
+    <dimen name="icon_lg">32dp</dimen>
+    <dimen name="icon_xl">48dp</dimen>
+    <dimen name="icon_xxl">64dp</dimen>
+    
+    <!-- Navigation -->
+    <dimen name="bottom_nav_height">64dp</dimen>
+    <dimen name="bottom_nav_margin">16dp</dimen>
+    <dimen name="bottom_nav_icon_size">24dp</dimen>
+    <dimen name="nav_fab_size">56dp</dimen>
+    <dimen name="nav_fab_elevation">8dp</dimen>
+    
+    <!-- Cards -->
+    <dimen name="card_min_height">120dp</dimen>
+    <dimen name="card_padding">12dp</dimen>
+    <dimen name="product_card_width">160dp</dimen>
+    <dimen name="product_image_height">120dp</dimen>
+    
+    <!-- Buttons -->
+    <dimen name="button_height_sm">32dp</dimen>
+    <dimen name="button_height_md">44dp</dimen>
+    <dimen name="button_height_lg">52dp</dimen>
+    <dimen name="add_button_size">28dp</dimen>
+    
+    <!-- Header -->
+    <dimen name="header_height">56dp</dimen>
+    <dimen name="search_bar_height">44dp</dimen>
+    <dimen name="banner_height">160dp</dimen>
+    
+    <!-- Category -->
+    <dimen name="category_chip_height">36dp</dimen>
+    <dimen name="category_icon_size">40dp</dimen>
+    
+    <!-- Text Sizes -->
+    <dimen name="text_display">28sp</dimen>
+    <dimen name="text_headline">22sp</dimen>
+    <dimen name="text_title">18sp</dimen>
+    <dimen name="text_subtitle">16sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_overline">10sp</dimen>
+    
+    <!-- Avatar -->
+    <dimen name="avatar_sm">32dp</dimen>
+    <dimen name="avatar_md">48dp</dimen>
+    <dimen name="avatar_lg">72dp</dimen>
+    <dimen name="avatar_xl">96dp</dimen>
+</resources>

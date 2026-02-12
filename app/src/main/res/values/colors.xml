@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Kiran Brand Colors - Black & White with Purple Accent -->
+    <color name="kiran_primary">#FFFFFF</color>
+    <color name="kiran_primary_variant">#F5F5F5</color>
+    <color name="kiran_secondary">#000000</color>
+    <color name="kiran_secondary_variant">#1A1A1A</color>
+    <color name="kiran_accent">#6C5CE7</color>
+    <color name="kiran_accent_light">#A29BFE</color>
+    
+    <!-- Background Colors -->
+    <color name="background_primary">#FFFFFF</color>
+    <color name="background_secondary">#F8F8F8</color>
+    <color name="background_tertiary">#F0F0F0</color>
+    <color name="background_card">#FFFFFF</color>
+    <color name="background_dark">#000000</color>
+    
+    <!-- Surface Colors -->
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F5F5F5</color>
+    <color name="surface_elevated">#FFFFFF</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_tertiary">#999999</color>
+    <color name="text_disabled">#CCCCCC</color>
+    <color name="text_on_accent">#FFFFFF</color>
+    <color name="text_on_dark">#FFFFFF</color>
+    
+    <!-- Semantic Colors -->
+    <color name="success">#00C853</color>
+    <color name="success_light">#E8F5E9</color>
+    <color name="warning">#FFB300</color>
+    <color name="warning_light">#FFF8E1</color>
+    <color name="error">#FF3D00</color>
+    <color name="error_light">#FFEBEE</color>
+    <color name="info">#2979FF</color>
+    <color name="info_light">#E3F2FD</color>
+    
+    <!-- Border & Divider -->
+    <color name="border">#E0E0E0</color>
+    <color name="border_light">#F0F0F0</color>
+    <color name="divider">#EEEEEE</color>
+    
+    <!-- Navigation -->
+    <color name="nav_background">#FFFFFF</color>
+    <color name="nav_indicator">#000000</color>
+    <color name="nav_active">#000000</color>
+    <color name="nav_inactive">#9E9E9E</color>
+    
+    <!-- Shimmer -->
+    <color name="shimmer_base">#F0F0F0</color>
+    <color name="shimmer_highlight">#FAFAFA</color>
+    
+    <!-- Ripple -->
+    <color name="ripple_light">#20000000</color>
+    <color name="ripple_dark">#20FFFFFF</color>
+    
+    <!-- Legacy - keeping for compatibility -->
+    <color name="primary">#000000</color>
+    <color name="primary_dark">#000000</color>
+    <color name="accent">#6C5CE7</color>
+</resources>
